@@ -1,0 +1,673 @@
+body
+{
+	background-image: url('images/back.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+
+body h1, body h2, body h3
+{
+	font-family: myfirstfont;
+}
+
+iframe {
+	border: none;
+	overflow: hidden;
+}
+
+/*Controls text on the main journal box*/
+.division
+{
+	overflow: hidden;
+	opacity: .85;
+	color: white;
+	text-align: center;
+}
+
+/*TOP DIV*/
+
+#top
+{
+	width: 100%;
+	height: 15%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	border-bottom: 2px solid white;
+	background-color: black;
+	font-family: myfirstfont;
+}
+
+/*Controls top division in general*/
+#top table
+{
+	width: 42%;
+	height: 30%;
+	color: black;
+	font-size: 33px;
+	position: relative;
+	left: 29%;
+	top: 65%;
+	border-top: 2px solid white;
+	border-bottom: hidden;
+	border-right: hidden;
+	border-left: hidden;
+	text-align: center;
+}
+
+#top td, tr
+{
+	width: 20%;
+	height: 100%;
+	border: hidden;
+}
+
+#bot
+{
+	width: 100%;
+	height: 5%;
+}
+
+#top a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#top a:hover
+{
+	text-decoration: none;
+	color: #c58125;
+}
+
+/*NWTF LOGO*/
+#logo
+{
+	width: 25%;
+	height: 75%;
+	position: absolute;
+	top: 12.5%;
+	right: 1%;
+}
+
+/*NWTF LOGO*/
+#logo1
+{
+	width: 13%;
+	height: 85%;
+	position: absolute;
+	top: 10%;
+	left: 5%;
+}
+
+/*MID DIV for HOME PG*/
+
+#mid
+{
+	width: 95%;
+	height: 85%;
+	position: absolute;
+	top: 16%;
+	left: 2.5%;
+	opacity: 1;
+}
+
+#mid h3
+{
+	color: white;
+}
+
+/*Main big box text*/
+#maintext
+{
+	width: 70%;
+	height: 90%;
+	background-color: black;
+	position: relative;
+	top: 3%;
+	left: 2%;
+	border: 1px solid white;
+	border-radius: 5px;
+	overflow-x: none;
+	overflow-y: scroll;
+}
+
+#maintext p
+{
+	font-size: 20;
+}
+
+/*Small box on top*/
+#box1
+{
+	width: 25%;
+	height: 42%;
+	background-color: black;
+	position: absolute;
+	top: 3%;
+	left: 74%;
+	border: none;
+	border: 1px solid white;
+	border-radius: 5px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+/*Small box on bottom*/
+#box2
+{
+	width: 25%;
+	height: 42%;
+	background-color: black;
+	position: absolute;
+	top: 51%;
+	left: 74%;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+/*MID DIV FOR ALL OTHER PAGES*/
+
+#maindiv
+{
+	width: 80%;
+	height: 90.2%;
+	position: absolute;
+	top: 3.8%;
+	left: 14%;
+	background-color: black;
+	border: 1px solid white;
+	overflow: auto;
+	opacity: .80;
+	z-index: 1;
+	overflow: auto;
+}
+
+#maindiv2
+{
+	width: 80%;
+	height: 90.2%;
+	position: absolute;
+	top: 3.8%;
+	left: 14%;
+	background-color: rgba(0, 0, 0,.8);
+	border: 1px solid white;
+	overflow: auto;
+	z-index: 1;
+	color: white;
+	text-align: center;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #8a8a8a;
+  border: 0px none #e1c180;
+  border-radius: 55px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #353535;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #4f4f4f;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #e1c180;
+  border-radius: 47px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/*Contact page*/
+
+/*Controls logos*/
+.contact
+{
+	max-width: 7vw;
+	height: auto;
+	opacity: .6;
+}
+
+.contact:hover
+{
+	opacity: 1;
+}
+
+.bodycontainer {
+	height: 100%;
+	display: grid;
+	grid-template-columns: 0.2fr 2.5fr;
+	grid-template-rows: 0.4fr 2.4fr 0.2fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "ContactTitle ContactTitle"
+	  "ContactSheet ContactSheet"
+	  "Facebookspace ContactFooter";
+}
+  
+.ContactSheet {
+	  grid-area: ContactSheet;
+}
+
+.ContactSheet > iframe {
+	width: 100%;
+	height:100%;
+	justify-content: center;
+	align-self: center;
+}
+	
+  
+.ContactTitle {
+	grid-area: ContactTitle;
+	justify-content: center;
+	align-self: center;
+}
+  
+.ContactFooter {
+	grid-area: ContactFooter;
+	justify-content: center;
+	align-self: flex-end;
+}
+  
+.Facebookspace {
+	grid-area: Facebookspace;
+	justify-content: center;
+	align-self: flex-end;
+}
+  
+/*phone logo*/
+#phone
+{
+	position: absolute;
+	height: 7%;
+	width: 5%;
+	left: 1%;
+	top: 90%;
+}
+/*Text that shows number of the phone*/
+#phonenumber
+{
+	position: absolute;
+	color: white;
+	top: 90%;
+	left: 5%;
+	width: 10%;
+	height: 5%;
+}
+/*Controls Swamp Tankee Gobblers tittle on the very top*/
+#title
+{
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	top: 0%;
+	left: 0%;
+	font-size: 1.5em;
+}
+
+/*personalized font*/
+@font-face
+{
+	font-family: Arial;
+	font-weight: bold;
+}
+
+#title h1
+{
+	position: relative;
+	top: -20%;
+	text-align: center;
+	font-family: myfirstfont;
+}
+/*events page*/
+#calendar
+{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+/*false imap*/
+#imap
+{
+	width: 9%;
+	height: 90%;
+	position: absolute;
+	top: 10%;
+	right: 17%;
+}
+
+/*Controlls sponsors logos on the Journal page*/
+.sponsors
+{
+	width: 25%;
+	height: 25%;
+	padding-top: -1%;
+	padding-bottom: 1%;
+}
+
+/*Controls quak logo, once it's a weird thing*/
+#quak
+{
+	width: 75%;
+}
+
+/*slideshow*/
+#slideshowwinter
+{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+
+#slideshowsummer
+{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 10%;
+	top: 100%;
+}
+
+#slideshowspring
+{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 10%;
+	/*top: 190%;*/
+}
+
+#slideshowfall
+{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 10%;
+	top: 280%;
+	padding-bottom: 2%;
+}
+
+/*Controls menu bar that changes year on gallery*/
+#years
+{
+	color: white;
+	height: 90.4%;
+	width: 10%;
+	position: absolute;
+	left: 4.1%;
+	top: 3.8%;
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 22;
+	background-color: black;
+	opacity: .85;
+}
+
+#years tr
+{
+	height: 14.2%;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+#years a
+{
+	text-decoration: none;
+	color: white;
+}
+
+#years a:hover
+{
+	text-decoration: underline;
+	color: white;
+}
+
+#years a:visited
+{
+	text-decoration: underline;
+	color: white;
+}
+/*position of selector dot*/
+#yearselector14
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 6.1%;
+}
+#yearselector15
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 20.3%;
+}
+#yearselector16
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 34.9%;
+}
+#yearselector17
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 49.1%;
+}
+#yearselector18
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 63.5%;
+}
+#yearselector19
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 78%;
+}
+#yearselector20
+{
+	width: 1%;
+	height: 1.8%;
+	position: absolute;
+	left: 1%;
+	top: 92.3%;
+}
+
+/*Controls Tittles on the main page of the gallery*/
+#wintertittle
+{
+	color: white;
+	position: absolute;
+	top: 0%;
+	left: 45%;
+}
+
+#summertittle
+{
+	color: yellow;
+	position: absolute;
+	top: 90%;
+	left: 45%;
+}
+
+#springtittle
+{
+	color: green;
+	position: absolute;
+	top: 180%;
+	left: 45%;
+}
+
+#falltittle
+{
+	color: orange;
+	position: absolute;
+	top: 270%;
+	left: 45%;
+}
+
+/* Controlls arrows used on JS
+#rightarrow
+{
+	position: absolute;
+	top: 90%;
+	left: 91%;
+}
+
+#leftarrow
+{
+	position: absolute;
+	top: 90%;
+	left: 15%;
+}
+
+#leftarrow:hover
+{
+	cursor: pointer;
+}
+
+#rightarrow:hover
+{
+	cursor: pointer;
+}
+*/
+
+/*JS Gallery dots
+.dot
+{
+	width: 2%;
+	width: 2%;
+	position: absolute;
+	top: 91.5%;
+}
+
+#dot0
+{
+	left: 47%;
+}
+
+#dot1
+{
+	left: 51%;
+}
+
+#dot2
+{
+	left: 55%;
+}
+
+#dot3
+{
+	left: 59%;
+}
+
+.dot:hover
+{
+	cursor: pointer;
+}
+*/
+
+
+/*googledocs*/
+#upcomingevents
+{
+	display: none;
+	width: 80%;
+	height: 70%;
+	border: none;
+	border-style: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#news
+{
+	width: 800%;
+	height: 70%;
+	border: none;
+	border-style: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	
+}
+
+/*googleslides*/
+#calendarevents
+{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	border-radius: 5px;
+}
+
+/*Controls video on mission page*/
+#missionvideo
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+}
+
+.MissionDoc iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.Missionbodycontainer {
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 0.2fr 2.5fr;
+	grid-template-rows: 1.5fr 1.1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	  "MissionDoc MissionDoc"
+	  "Facebookspace MissionVideo";
+  }
+  
+  .MissionDoc { grid-area: MissionDoc; }
+  
+  .MissionVideo { grid-area: MissionVideo; }
+  
+  .Facebookspace { grid-area: Facebookspace; }
+  
+
