@@ -112,6 +112,7 @@ iframe {
 	top: 16%;
 	left: 2.5%;
 	opacity: 1;
+	overflow: hidden;
 }
 
 #mid h3
@@ -177,10 +178,10 @@ iframe {
 	position: absolute;
 	top: 3.8%;
 	left: 14%;
-	background-color: black;
-	border: 1px solid white;
+	/* background-color: black; */
+	/* border: 1px solid white; */
 	overflow: auto;
-	opacity: .80;
+	opacity: 1;
 	z-index: 1;
 	overflow: auto;
 }
@@ -646,8 +647,12 @@ iframe {
 }
 
 .MissionDoc iframe {
-	width: 100%;
+	justify-content: center;
+	align-self: center;
+	width: 60%;
 	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .Missionbodycontainer {
