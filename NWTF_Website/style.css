@@ -4,6 +4,7 @@ body
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+<<<<<<< Updated upstream
 	overflow: hidden;
 }
 
@@ -15,12 +16,20 @@ body h1, body h2, body h3
 iframe {
 	border: none;
 	overflow: hidden;
+=======
+	/* overflow: hidden; */
+	font-family: 'Trebuchet MS';
+}
+
+iframe {
+	border: 0;
+>>>>>>> Stashed changes
 }
 
 /*Controls text on the main journal box*/
 .division
 {
-	overflow: hidden;
+	/* overflow: hidden; */
 	opacity: .85;
 	color: white;
 	text-align: center;
@@ -28,6 +37,7 @@ iframe {
 
 /*TOP DIV*/
 
+<<<<<<< Updated upstream
 #top
 {
 	width: 100%;
@@ -38,6 +48,19 @@ iframe {
 	border-bottom: 2px solid white;
 	background-color: black;
 	font-family: myfirstfont;
+=======
+nav {
+	display: flex;
+	align-items: center;
+	width: 100vw;
+	height: auto;
+	background-color: rgba(0, 0, 0,.85);
+	backdrop-filter: blur(10px);
+}
+
+nav a img {
+	margin: 20px;
+>>>>>>> Stashed changes
 }
 
 /*Controls top division in general*/
@@ -64,20 +87,34 @@ iframe {
 	border: hidden;
 }
 
+<<<<<<< Updated upstream
 #bot
+=======
+.navlinks
+>>>>>>> Stashed changes
 {
 	width: 100%;
 	height: 5%;
 }
 
+<<<<<<< Updated upstream
 #top a
 {
+=======
+.navlinks a {
+	font-size: 33px;
+	padding: 20px;
+>>>>>>> Stashed changes
 	text-decoration: none;
 	color: white;
 }
 
+<<<<<<< Updated upstream
 #top a:hover
 {
+=======
+.navlinks a:hover {
+>>>>>>> Stashed changes
 	text-decoration: none;
 	color: #c58125;
 }
@@ -108,9 +145,6 @@ iframe {
 {
 	width: 95%;
 	height: 85%;
-	position: absolute;
-	top: 16%;
-	left: 2.5%;
 	opacity: 1;
 	overflow: hidden;
 }
@@ -126,10 +160,13 @@ iframe {
 	width: 70%;
 	height: 90%;
 	background-color: black;
+<<<<<<< Updated upstream
 	position: relative;
 	top: 3%;
 	left: 2%;
 	border: 1px solid white;
+=======
+>>>>>>> Stashed changes
 	border-radius: 5px;
 	overflow-x: none;
 	overflow-y: scroll;
@@ -146,9 +183,6 @@ iframe {
 	width: 25%;
 	height: 42%;
 	background-color: black;
-	position: absolute;
-	top: 3%;
-	left: 74%;
 	border: none;
 	border: 1px solid white;
 	border-radius: 5px;
@@ -162,6 +196,7 @@ iframe {
 	width: 25%;
 	height: 42%;
 	background-color: black;
+<<<<<<< Updated upstream
 	position: absolute;
 	top: 51%;
 	left: 74%;
@@ -201,6 +236,11 @@ iframe {
 	text-align: center;
 }
 
+=======
+	border-radius: 5px;
+}
+
+>>>>>>> Stashed changes
 /*scrollbar*/
 ::-webkit-scrollbar {
   width: 7px;
@@ -236,6 +276,22 @@ iframe {
   background: transparent;
 }
 
+.gallerycontainer {
+	position: relative;
+    padding-bottom: 56.25%; /* 16:9 Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+#gallery {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+}
+
 /*Contact page*/
 
 /*Controls logos*/
@@ -255,17 +311,16 @@ iframe {
 	height: 100%;
 	display: grid;
 	grid-template-columns: 0.2fr 2.5fr;
-	grid-template-rows: 0.4fr 2.4fr 0.2fr;
+	grid-template-rows: 2.4fr 0.2fr;
 	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas:
-	  "ContactTitle ContactTitle"
-	  "ContactSheet ContactSheet"
-	  "Facebookspace ContactFooter";
+	  "ContactSheet"
+	  "ContactFooter";
 }
   
 .ContactSheet {
-	  grid-area: ContactSheet;
+	grid-area: ContactSheet;
 }
 
 .ContactSheet > iframe {
@@ -284,15 +339,13 @@ iframe {
   
 .ContactFooter {
 	grid-area: ContactFooter;
-	justify-content: center;
-	align-self: flex-end;
+	display: flex;
+	background-color: rgba(0, 0, 0, .85);
+	backdrop-filter: blur(10px);
+	width: 100vw;
+	align-self: center;
 }
-  
-.Facebookspace {
-	grid-area: Facebookspace;
-	justify-content: center;
-	align-self: flex-end;
-}
+<<<<<<< Updated upstream
   
 /*phone logo*/
 #phone
@@ -356,6 +409,16 @@ iframe {
 	position: absolute;
 	top: 10%;
 	right: 17%;
+=======
+
+#footeritem:nth-child(1) {
+	color: white;
+	justify-content: center;
+}
+
+#footeritem:nth-child(2) {
+	justify-content: end;
+>>>>>>> Stashed changes
 }
 
 /*Controlls sponsors logos on the Journal page*/
@@ -373,6 +436,7 @@ iframe {
 	width: 75%;
 }
 
+<<<<<<< Updated upstream
 /*slideshow*/
 #slideshowwinter
 {
@@ -604,6 +668,16 @@ iframe {
 */
 
 
+=======
+#calendar {
+	display: flex;
+	width: 70%;
+	height: 700px;
+	margin: 40px auto 40px auto;
+	border-radius: 8px;
+}
+
+>>>>>>> Stashed changes
 /*googledocs*/
 #upcomingevents
 {
@@ -616,6 +690,7 @@ iframe {
 	overflow-y: hidden;
 }
 
+<<<<<<< Updated upstream
 #news
 {
 	width: 800%;
@@ -646,6 +721,8 @@ iframe {
 	border-radius: 3px;
 }
 
+=======
+>>>>>>> Stashed changes
 .MissionDoc iframe {
 	justify-content: center;
 	align-self: center;
@@ -674,5 +751,3 @@ iframe {
   .MissionVideo { grid-area: MissionVideo; }
   
   .Facebookspace { grid-area: Facebookspace; }
-  
-
