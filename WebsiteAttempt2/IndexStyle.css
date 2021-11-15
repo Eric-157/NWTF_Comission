@@ -1,7 +1,7 @@
 .grid {
     display: grid;
-    grid-template-columns: 1fr 0.65fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.25fr 2fr;
+    grid-template-rows: 2fr 1.25fr;
     gap: 2vh 2vh;
     margin: 2vh;
     grid-template-areas:
@@ -21,6 +21,15 @@
   
   .News {
     grid-area: News;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .News iframe {
+    width: 50vw;
+    height: 65vh;
+    border-radius: 10px;
   }
   
   .Events {
@@ -31,8 +40,8 @@
   }
 
   .Events iframe {
-    width: 40vw;
-    height: 30vh;
+    width: 45vw;
+    height: 38vh;
     border-radius: 10px
   }
   
@@ -44,8 +53,33 @@
   }
 
   .Sponsors iframe {
-    width: 37.5vw;
-    height: 27.5vh;
+    width: 45vw;
+    height: 20vh;
     border-radius: 10px
   }
+
+@media only screen and (max-width: 600px) {
+	.grid {
+		grid-template-columns: auto;
+		grid-template-areas: 
+			"News"
+			"Events"
+			"Sponsors";
+    gap: 1vh 1vh;
+    margin: 1vh;
+    height: auto;
+	}
+
+  .News iframe {
+    width: 90vw;
+  }
+
+  .Events iframe {
+    width: 90vw;
+  }
+
+  .Sponsors iframe {
+    width: 90vw;
+  }
+}
   
