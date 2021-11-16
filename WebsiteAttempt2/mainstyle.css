@@ -1,6 +1,5 @@
 * {
     margin: 0;
-	padding: 0;
 }
 
 body {
@@ -103,20 +102,27 @@ footer a img {
     background: black;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1400px) {
 	nav {
-		position: fixed;
-		top: 0;
-		z-index: 1;
-		width: auto;
-		height: auto;
-		background-color: rgba(0, 0, 0, 0);
-		backdrop-filter: blur(0px);
-		flex-direction: column;
+		height: 12vh;
 	}
 
 	nav > a {
 		display: none;
+	}
+
+	main {
+		min-height: 76vh;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	nav {
+		position: fixed;
+		top: 0;
+		z-index: 1;
+		height: auto;
+		width: 0;
 	}
 
 	.link-container {
@@ -141,6 +147,10 @@ footer a img {
 
 	#navlinks a {
 		font-size: 28px;
+	}
+
+	main {
+		margin-top: 90px;
 	}
 
 	footer {
