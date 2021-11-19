@@ -1,3 +1,19 @@
+/*  
+* NWTF Website
+*
+* Home Webpage
+*
+* Authors: Ryan Griffin and Eric Edwards
+*
+* Date: 11/19/2021
+*/
+
+/* Creates the grid for the index page. Sets up a 2 by 2 grid which has 3 boxes contained within it, 1 box taking up 2 spaces and the other 2 boxes taking up 1 space each. */
+
+body {
+  overflow-y: scroll;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 2.25fr 2fr;
@@ -7,18 +23,19 @@
     grid-template-areas:
       "News Events"
       "News Sponsors";
-    height: 66vh;
+      height: auto;
   }
 
+  /* Creates a blurring effect on the boxes within the grid and adds color and shadow. We also apply a radius and padding. */
   .grid div {
     background-color: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
     border-radius: 10px;
-    color: white;
     padding: clamp(1%, 2%, 3%);
   }
   
+  /* The News Section for the grid, sets the alignment and size of the Iframe. */
   .News {
     grid-area: News;
     display: flex;
@@ -32,6 +49,7 @@
     border-radius: 10px;
   }
   
+   /* The Events Section for the grid, sets the alignment and size of the Iframe. */
   .Events {
     grid-area: Events;
     display: flex;
@@ -45,6 +63,7 @@
     border-radius: 10px
   }
   
+   /* The Sponsors Section for the grid, sets the alignment and size of the Iframe. */
   .Sponsors {
     grid-area: Sponsors;
     display: flex;
@@ -58,6 +77,21 @@
     border-radius: 10px
   }
 
+  /* Media Query for a specific size on the index page so the grid is organized in a 1 by 3 grid, creating a verticle effect. All the other pages use the query's in main style for their mobile optimization, Index is the only page that needed a special case. When messing with mobile sizing, check this query to ensure there are no bugs. */
+@media only screen and (min-width: 8000px) {
+  body {
+    min-height: 88vh;
+    overflow-y: scroll;
+  }
+
+  footer {
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
 	.grid {
 		grid-template-columns: auto;
@@ -66,7 +100,7 @@
 			"Events"
 			"Sponsors";
     gap: 1vh 1vh;
-    margin: 1vh;
+    margin: 0vh 1vh;
     height: auto;
 	}
 

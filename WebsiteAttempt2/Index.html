@@ -1,7 +1,17 @@
+<!-- 
+* NWTF Website
+*
+* Home Webpage
+*
+* Authors: Ryan Griffin and Eric Edwards
+*
+* Date: 11/19/2021
+ -->
 <!DOCTYPE html>
 <html>
     <head>
         <title>NWTF Home</title>
+		<!-- metas for characater set, content scaling, searching by words, and linking css and js files. -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="mainstyle.css">
@@ -12,6 +22,7 @@
     </head>
 
     <body>
+		<!-- Nav for website, includes the menu button js and images that dissapear based on a certain size (see mainstyle.css) -->
         <nav>
 			<a href="index.html">
 				<img src="Images\ChapterLogo.png">
@@ -27,12 +38,13 @@
 					<a href="Sponsors.html">Sponsors</a>
 				</div>
 			</div>
-
 			<a href="http://www.nwtf.org" target="_blank">
 				<img src="Images\Orglogo.png">
 			</a>
 		</nav>
+		<h1>Tri County Strutters</h1>
 		<main>
+			<!-- 3 different sections held within a grid. News contains an Iframe to the news slideshow, Events contains an Iframe to the google calendar connected to the email, and Sponsors contains an Iframe to the HomeSponsors Slideshow -->
 			<div class="grid">
 				<div class="News">
 					<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwlkT3Wp2hmj17nI1ELeYXgf0t5EeMwOkGXdFyVyIIuVu8AlwjZKovdYQAth8fZTqtXkETrCClMcmz/embed?start=false&loop=false&delayms=3000&rm=minimal"></iframe>
@@ -47,6 +59,8 @@
 				</div>
 			</div>
 		</main>
+
+		<!-- Footer with text and the facebook link. Also includes a external link to elfsight which is currently providing a unique viewer view counter. Look into changing at some point as it costs money to get rid of the elfsight watermark and to get more than 200 max viewers counted. Also seems to update much more often than every month. When making a new view counter, look into cookies and using them to count unique viewers. -->
 		<footer>
 			Tri-County Strutters, 32 Daniels ST, Franklin, MA 02038
 			<a href="https://www.facebook.com/NWTFtricountystrutters/" target="_blank"><img src="Images/fb.png"></a>
