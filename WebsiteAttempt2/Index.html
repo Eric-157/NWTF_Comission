@@ -11,61 +11,81 @@
 <html>
     <head>
         <title>NWTF Home</title>
-		<!-- metas for characater set, content scaling, searching by words, and linking css and js files. -->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="mainstyle.css">
-		<link rel="stylesheet" href="IndexStyle.css">
-		<script src="javascript.js"></script>
-        <link rel="shortcut icon" href="Images\ChapterLogo.ico">
-		<meta name="keywords" content="Turkey, Hunting, Outdoors, NWTF, Preservation, Open Space">
+        <!-- metas for characater set, content scaling, searching by words, and linking css and js files. -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="mainstyle.css" />
+        <link rel="stylesheet" href="IndexStyle.css" />
+        <script src="javascript.js"></script>
+        <link rel="shortcut icon" href="Images\ChapterLogo.ico" />
+        <meta
+            name="keywords"
+            content="Turkey, Hunting, Outdoors, NWTF, Preservation, Open Space"
+        />
     </head>
 
     <body>
-		<!-- Nav for website, includes the menu button js and images that dissapear based on a certain size (see mainstyle.css) -->
+        <!-- Nav for website, includes the menu button js and images that dissapear based on a certain size (see mainstyle.css) -->
         <nav>
-			<a href="index.html">
-				<img src="Images\ChapterLogo.png">
-			</a>
-			<div class="link-container">
-				<button onclick="button_press()" id="button"></button>
-				<div id="navlinks">
-					<a href="index.html">Home</a>
-					<a href="events.html">Events</a>
-					<a href="gallery.html">Gallery</a>
-					<a href="contact.html">Contact</a>
-					<a href="Mission.html">Mission</a>
-					<a href="Sponsors.html">Sponsors</a>
-				</div>
-			</div>
-			<a href="http://www.nwtf.org" target="_blank">
-				<img src="Images\Orglogo.png">
-			</a>
-		</nav>
-		<h1>Tri County Strutters</h1>
-		<main>
-			<!-- 3 different sections held within a grid. News contains an Iframe to the news slideshow, Events contains an Iframe to the google calendar connected to the email, and Sponsors contains an Iframe to the HomeSponsors Slideshow -->
-			<div class="grid">
-				<div class="News">
-					<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwlkT3Wp2hmj17nI1ELeYXgf0t5EeMwOkGXdFyVyIIuVu8AlwjZKovdYQAth8fZTqtXkETrCClMcmz/embed?start=false&loop=false&delayms=3000&rm=minimal"></iframe>
-				</div>
+            <a href="index.html">
+                <img src="Images\ChapterLogo.png" />
+            </a>
+            <button onclick="button_press()"></button>
+            <div>
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                <a href="Mission.html">Mission</a>
+                <a href="Sponsors.html">Sponsors</a>
+            </div>
+            <a href="http://www.nwtf.org" target="_blank">
+                <img src="Images\Orglogo.png" />
+            </a>
+        </nav>
+        <div>
+            <h1>Tri-County Strutters</h1>
+            <a href="http://www.nwtf.org" target="_blank"><img src="images/OrglogoSmall.png"></a>
+        </div>
+        <main>
+            <!-- 3 different sections held within a grid. News contains an Iframe to the news slideshow, Events contains an Iframe to the google calendar connected to the email, and Sponsors contains an Iframe to the HomeSponsors Slideshow -->
+            <div class="grid">
+                <div class="News">
+                    <iframe
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vQwlkT3Wp2hmj17nI1ELeYXgf0t5EeMwOkGXdFyVyIIuVu8AlwjZKovdYQAth8fZTqtXkETrCClMcmz/embed?start=false&loop=false&delayms=3000&rm=minimal"
+                    ></iframe>
+                </div>
 
-				<div class="Events">
-					<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffb12b&ctz=America%2FNew_York&mode=MONTH&showTabs=0&showPrint=1&showTitle=0&showTz=1&src=dHJpY291bnR5Lm53dGYubWFAZ21haWwuY29t&color=%23039BE5" scrolling="no"></iframe>
-				</div>
+                <div class="Events">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffb12b&ctz=America%2FNew_York&mode=MONTH&showTabs=0&showPrint=1&showTitle=0&showTz=1&src=dHJpY291bnR5Lm53dGYubWFAZ21haWwuY29t&color=%23039BE5"
+                        scrolling="no"
+                    ></iframe>
+                </div>
 
-				<div class="Sponsors">
-					<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQR9aRHteAmof9DnOjejo7XfZJ8Nk6SbRo4rAggBDoYmEITIlD8E6pTU8sft_hxh-4sAbb3_vq0RrWD/embed?start=false&loop=false&delayms=3000&rm=minimal"></iframe>
-				</div>
-			</div>
-		</main>
+                <div class="Sponsors">
+                    <iframe
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vQR9aRHteAmof9DnOjejo7XfZJ8Nk6SbRo4rAggBDoYmEITIlD8E6pTU8sft_hxh-4sAbb3_vq0RrWD/embed?start=false&loop=false&delayms=3000&rm=minimal"
+                    ></iframe>
+                </div>
+            </div>
+        </main>
 
-		<!-- Footer with text and the facebook link. Also includes a external link to elfsight which is currently providing a unique viewer view counter. Look into changing at some point as it costs money to get rid of the elfsight watermark and to get more than 200 max viewers counted. Also seems to update much more often than every month. When making a new view counter, look into cookies and using them to count unique viewers. -->
-		<footer>
-			Tri-County Strutters, 32 Daniels ST, Franklin, MA 02038
-			<a href="https://www.facebook.com/NWTFtricountystrutters/" target="_blank"><img src="Images/fb.png"></a>
-			<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-			<div class="elfsight-app-fd36e04d-48dc-4e8c-9d1b-e67de3d32974"></div>
-		</footer>
+        <!-- Footer with text and the facebook link. Also includes a external link to elfsight which is currently providing a unique viewer view counter. Look into changing at some point as it costs money to get rid of the elfsight watermark and to get more than 200 max viewers counted. Also seems to update much more often than every month. When making a new view counter, look into cookies and using them to count unique viewers. -->
+        <footer>
+            Tri-County Strutters, 32 Daniels ST, Franklin, MA 02038
+            <a
+                href="https://www.facebook.com/NWTFtricountystrutters/"
+                target="_blank"
+                ><img src="Images/fb.png"
+            /></a>
+            <script
+                src="https://apps.elfsight.com/p/platform.js"
+                defer
+            ></script>
+            <div
+                class="elfsight-app-fd36e04d-48dc-4e8c-9d1b-e67de3d32974"
+            ></div>
+        </footer>
     </body>
 </html>

@@ -78,21 +78,8 @@ body {
   }
 
   /* Media Query for a specific size on the index page so the grid is organized in a 1 by 3 grid, creating a verticle effect. All the other pages use the query's in main style for their mobile optimization, Index is the only page that needed a special case. When messing with mobile sizing, check this query to ensure there are no bugs. */
-@media only screen and (min-width: 8000px) {
-  body {
-    min-height: 88vh;
-    overflow-y: scroll;
-  }
 
-  footer {
-    height: auto;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 	.grid {
 		grid-template-columns: auto;
 		grid-template-areas: 
@@ -100,7 +87,7 @@ body {
 			"Events"
 			"Sponsors";
     gap: 1vh 1vh;
-    margin: 0vh 1vh;
+    margin: 0 1vh;
     height: auto;
 	}
 

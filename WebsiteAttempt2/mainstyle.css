@@ -37,11 +37,11 @@ nav > a {
 	margin: 20px;
 }
 
-nav a img {
-	height: 18vh;
+nav > a img {
+	height: 8vw;
 }
 
-.link-container {
+nav div {
 	display: flex;
 	text-align: center;
 	margin: 20px auto 20px auto;
@@ -61,27 +61,36 @@ button {
 	box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
 }
 
-#navlinks {
-	display: flex;
-}
-
-#navlinks a {
-	font-size: 33px;
+nav div a {
+	font-size: 2vw;
 	padding: 20px;
 	text-decoration: none;
 	color: white;
 }
 
-#navlinks a:hover {
+nav div a:hover {
 	text-decoration: none;
 	color: #c58125;
 }
 
-/* h1 margins */
-body > h1 {
+body > div {
 	display: none;
-	margin: 20px 10px 20px auto;
-	font-size: 30px;
+	align-items: center;
+	margin: auto;
+	margin: 10px 10px 10px auto;
+}
+
+body > div h1 {
+	font-size: 22px;
+}
+
+body > div a {
+	margin-left: 10px;
+}
+
+body > div a img {
+	height: 50px;
+	width: 50px;
 }
 
 /* sets all Iframes to have a border of 0 */
@@ -126,10 +135,6 @@ footer a img {
 		overflow-y: visible;
 	}
 
-	nav > a {
-		display: none;
-	}
-
 	main {
 		min-height: 76vh;
 	}
@@ -141,35 +146,53 @@ footer a img {
 		display: flex;
 		flex-direction: column;
 	}
+
+	body > div {
+		display: flex;
+	}
+
 	nav {
 		position: fixed;
 		top: 0;
 		z-index: 1;
-		width: 0;
+		width: auto;
+		background: none;
+		backdrop-filter: blur(0px);
 	}
 
-	.link-container {
-		flex-direction: column;
-		margin: 0;
+	nav > a {
+		display: none;
 	}
 
 	button {
 		display: flex;
 	}
 
-	#navlinks {
+	nav div {
+		position: fixed;
+		top: 0;
 		flex-direction: column;
 		background-color: rgba(0, 0, 0, 0.95);
-		margin: 0px 10px 10px 10px;
+		margin: 70px 10px 10px 10px;
 		border-radius: 10px;
-		max-height: 0px;
-		overflow: hidden;
-		transition: 0.3s;
 		text-align: left;
+		overflow: hidden;
+		transition: max-height 0.3s;
+		max-height: 0px;
 	}
 
-	#navlinks a {
+	nav div a {
 		font-size: 28px;
+	}
+	
+
+	.open div {
+		max-height: 432px;
+		box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.3);
+	}
+
+	.open button {
+		background-image: url("buttons/close.png");
 	}
 
 	body h1 {
